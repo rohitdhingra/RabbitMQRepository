@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "5a67a809-b781-40cb-bf49-b82744f257d3",
+		"name": "RabbitMQCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "orderService",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Rajma\",\r\n    \"qty\":2,\r\n    \"price\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9292/order/haldiram",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"order",
+						"haldiram"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
