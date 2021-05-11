@@ -22,7 +22,8 @@ public class RabbitmqdemoApplication implements CommandLineRunner{
 		SimpleMessage simpleMessage = new SimpleMessage();
 		simpleMessage.setName("firstSimpleMessage");
 		simpleMessage.setDescription("simple description");
-		rabbitTemplate.convertAndSend("TestExchange", "routingKey", simpleMessage);
+//		rabbitTemplate.convertAndSend("TestExchange", "routingKey", simpleMessage);
+		rabbitTemplate.convertAndSend("MyTopicExchange", "topic", simpleMessage);
 	}
 
 }

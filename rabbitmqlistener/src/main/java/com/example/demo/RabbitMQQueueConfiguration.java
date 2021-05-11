@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import org.springframework.amqp.core.Exchange;
+import org.springframework.amqp.core.ExchangeBuilder;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.core.QueueBuilder;
 import org.springframework.context.annotation.Bean;
@@ -22,4 +24,6 @@ public class RabbitMQQueueConfiguration {
 				.exclusive()
 				.build();
 	}
+	
+	
 }
